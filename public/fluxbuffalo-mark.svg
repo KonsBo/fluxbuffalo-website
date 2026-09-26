@@ -1,0 +1,30 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="150 150 780 480"
+  fill="none"
+>
+  <g
+    fill="none"
+    stroke="#163b4aff"
+    stroke-width="14"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M700 390L422 334L452 191L520 222H680L746 260L813 258L869 307L890 398L846 432L800 420L755 474L678 523L611 505L563 583L525 568L416 553L401 510L239 522L189 490L250 456L225 408L185 495L700 390Z" />
+
+    <path d="M352 291L401 510" />
+    <path d="M352 291L315 518" />
+    <path d="M520 222L456 553" />
+    <path d="M520 222L611 505" />
+    <path d="M680 222L563 583" />
+    <path d="M680 222L755 474" />
+    <path d="M746 260L678 523" />
+    <path d="M813 258L800 420" />
+    <path d="M869 307L755 474" />
+    <path d="M890 398L846 432" />
+    <path d="M755 474L846 432" />
+    <path d="M611 505L678 523" />
+    <path d="M813 258L846 189L843 286" />
+    <path d="M869 307L832 223" />
+  </g>
+</svg>
