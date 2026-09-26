@@ -194,7 +194,11 @@ function App() {
     : 'Η Mockspace αναπτύσσεται από το fluxBuffalo Studio ως εργαλείο σχεδιασμού εγκαταστάσεων προβολής. Στόχος της είναι η δοκιμή χώρων, οπτικού υλικού και ιδεών πριν από την υλοποίηση.'}
 </p>
 
-<a className="button button-secondary" href="mailto:contact@fluxbuffalostudio.com?subject=Mockspace">
+<a className="button button-secondary" href="mailto:contact@fluxbuffalostudio.com?subject=Mockspace"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  
   {language === 'en' ? 'Ask about Mockspace' : 'Επικοινωνία για τη Mockspace'}
 </a>
           </div>
