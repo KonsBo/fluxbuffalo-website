@@ -235,6 +235,8 @@ function App() {
 <a
   className="button button-primary contact-email"
   href="mailto:contact@fluxbuffalostudio.com?subject=Project%20enquiry"
+  target="_blank"
+  rel="noopener noreferrer"
 >
   contact@fluxbuffalostudio.com
 </a>
