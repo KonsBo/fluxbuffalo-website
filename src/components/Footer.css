@@ -1,24 +1,40 @@
 .site-footer {
   width: min(100% - (var(--page-padding) * 2), var(--content-width));
   margin: 0 auto;
-  padding: 32px 0 132px;
+  padding: 32px 0 112px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 16px;
+  gap: 24px;
+
   color: var(--muted);
   font-size: 0.88rem;
 }
 
-.footer-content p {
+.footer-business {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-business p {
   margin: 0;
 }
 
+.footer-business-details {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
 .footer-content a {
+  max-width: 100%;
+  overflow-wrap: anywhere;
   transition: color 180ms ease;
 }
 
@@ -31,8 +47,11 @@
   left: 16px;
   bottom: 16px;
   z-index: 20;
+
   display: block;
   width: min(520px, 48vw);
+  margin: 0;
+
   background: #ffffff;
   border-radius: 4px;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.32);
@@ -55,13 +74,14 @@
     text-align: center;
   }
 
+  .footer-business {
+    width: 100%;
+    align-items: center;
+  }
+
   .funding-banner {
     left: 10px;
     bottom: 10px;
     width: min(360px, 72vw);
   }
 }
-.funding-banner { position: fixed; width: min(520px, 48vw); margin: 0; }
-@media (max-width: 640px) { .funding-banner { width: min(360px, 72vw); } }
-.site-footer { padding-bottom: 96px; }
-.footer-content a { overflow-wrap: anywhere; max-width: 100%; }
