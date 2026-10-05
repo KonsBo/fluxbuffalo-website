@@ -9,9 +9,21 @@ type HeaderProps = {
 }
 
 function Header({ language, onToggle }: HeaderProps) {
+  const homeLabel =
+    language === 'en'
+      ? 'fluxBuffalo Studio — Back to top'
+      : 'fluxBuffalo Studio — Επιστροφή στην κορυφή'
+
+  const navigationLabel =
+    language === 'en' ? 'Primary navigation' : 'Κύρια πλοήγηση'
+
   return (
     <header className="site-header">
-      <a className="brand-logo-link" href="#main-content" aria-label="fluxBuffalo Studio — Home">
+      <a
+        className="brand-logo-link"
+        href="#top"
+        aria-label={homeLabel}
+      >
         <img
           className="brand-logo"
           src="/fluxbuffalo-mark.svg"
@@ -19,19 +31,16 @@ function Header({ language, onToggle }: HeaderProps) {
         />
       </a>
 
-      <nav className="site-nav" aria-label={language === 'en' ? 'Primary navigation' : 'Κύρια πλοήγηση'}>
-        <a href="#studio">
-          {language === 'en' ? 'Studio' : 'Studio'}
-        </a>
+      <nav className="site-nav" aria-label={navigationLabel}>
+        <a href="#studio">Studio</a>
 
-        <a href="#app">
-          {language === 'en' ? 'Mockspace' : 'Mockspace'}
-        </a>
+        <a href="#app">Mockspace</a>
 
         <a href="#contact">
           {language === 'en' ? 'Contact' : 'Επικοινωνία'}
         </a>
       </nav>
+
       <LanguageSwitcher language={language} onToggle={onToggle} />
     </header>
   )
